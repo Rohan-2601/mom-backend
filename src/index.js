@@ -13,9 +13,8 @@ const app = express();
 
 // ✅ CORS setup
 const allowedOrigins = [
-  "http://localhost:3000", // for local dev
-  "https://mom-frontend-kappa.vercel.app" // your deployed frontend URL
-
+  "http://localhost:3000",
+  "https://mom-frontend-kappa.vercel.app"
 ];
 
 app.use(
@@ -28,8 +27,15 @@ app.use(
 
 app.use(express.json());
 
-// ✅ Connect DB
-connectDB();
+// ✅ Connect DB only if not already connected (prevents multiple connections)
+let isConnected = false;
+const ensureDBConnected = async () => {
+  if (!isConnected) {
+    await connectDB();
+    isConnected = true;
+  }
+};
+await ensureDBConnected();
 
 // ✅ Routes
 app.use("/api/meetings", router);
@@ -37,8 +43,12 @@ app.use("/api/audio", audioRouter);
 app.use("/api/transcription", transcriptionRoutes);
 app.use("/api/waitlist", webhookRoutes);
 
-// ✅ Server start
-// const PORT = process.env.PORT || 5000;
-// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
+// ✅ Export for Vercel serverless
 export default app;
+
+// ✅ Local run (for development)
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => console.log(`Server running locally on port ${PORT}`));
+}
+
