@@ -14,7 +14,8 @@ const app = express();
 // ✅ CORS setup
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://mom-frontend-kappa.vercel.app"
+  "https://mom-frontend-kappa.vercel.app",
+  "https://mom-frontend-kappa-git-main-rohan-2601s-projects.vercel.app" 
 ];
 
 app.use(
