@@ -92,24 +92,24 @@ await transporter.sendMail({
         Just pure progress, straight to your inbox.
       </p>
 
-      // <div style="text-align: center; margin-top: 40px;">
-      //   <a 
-      //     href="https://mom-ai.vercel.app" 
-      //     style="
-      //       background: linear-gradient(to right, #6366f1, #8b5cf6);
-      //       color: white;
-      //       padding: 12px 28px;
-      //       border-radius: 9999px;
-      //       text-decoration: none;
-      //       font-weight: 600;
-      //       box-shadow: 0 0 15px rgba(99,102,241,0.3);
-      //       transition: all 0.3s ease;
-      //       display: inline-block;
-      //     "
-      //   >
-      //     Visit MoM.AI
-      //   </a>
-      // </div>
+       <div style="text-align: center; margin-top: 40px;">
+         <a 
+           href="https://x.com/RohanRaj1271853?t=Bqu4VuGsMs7wWqqlFuYFgQ&s=09_" 
+           style="
+             background: linear-gradient(to right, #6366f1, #8b5cf6);
+             color: white;
+             padding: 12px 28px;
+             border-radius: 9999px;
+             text-decoration: none;
+             font-weight: 600;
+             box-shadow: 0 0 15px rgba(99,102,241,0.3);
+             transition: all 0.3s ease;
+             display: inline-block;
+           "
+         >
+          follow us on X(twitter)
+         </a>
+       </div>
     </div>
 
     <!-- Footer -->
