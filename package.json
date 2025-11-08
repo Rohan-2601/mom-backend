@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node src/index.js",
-  "dev": "nodemon src/index.js"
-},
-
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,6 +20,7 @@
     "multer": "^2.0.2",
     "nodemailer": "^7.0.10",
     "nodemon": "^3.1.10",
-    "openai": "^6.8.0"
+    "openai": "^6.8.0",
+    "resend": "^6.4.2"
   }
 }
