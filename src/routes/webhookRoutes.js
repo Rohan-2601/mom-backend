@@ -49,7 +49,7 @@ await transporter.sendMail({
       </p>
 
       <div style="text-align:center;margin-top:32px;">
-        <a href="https://twitter.com/MoMAI156002" 
+        <a href="https://x.com/RohanRaj1271853?t=Bqu4VuGsMs7wWqqlFuYFgQ&s=09" 
            style="background:linear-gradient(to right,#6366f1,#8b5cf6);color:white;padding:12px 28px;border-radius:9999px;text-decoration:none;font-weight:600;">
            Follow Us on X (Twitter)
         </a>
