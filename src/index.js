@@ -14,7 +14,8 @@ const app = express();
 // ✅ CORS setup
 const allowedOrigins = [
   "http://localhost:3000", // for local dev
-  "https://ephemeral-puppy-61cd0a.netlify.app/" // your deployed frontend URL
+  "https://mom-frontend-kappa.vercel.app" // your deployed frontend URL
+
 ];
 
 app.use(

@@ -1,16 +1,12 @@
 {
-  "name": "backend",
+  "name": "mom-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "MoM.AI backend (Express + Nodemailer + MongoDB)",
+  "main": "src/index.js",
   "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
     "cloudinary": "^2.8.0",
     "cors": "^2.8.5",
@@ -19,8 +15,8 @@
     "mongoose": "^8.19.3",
     "multer": "^2.0.2",
     "nodemailer": "^7.0.10",
-    "nodemon": "^3.1.10",
     "openai": "^6.8.0",
     "resend": "^6.4.2"
   }
 }
+
