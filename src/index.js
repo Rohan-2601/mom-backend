@@ -43,7 +43,9 @@ app.use("/api/audio", audioRouter);
 app.use("/api/transcription", transcriptionRoutes);
 app.use("/api/waitlist", webhookRoutes);
 
-// ✅ Export for Vercel serverless
+app.get("/", (req, res) => {
+  res.status(200).send("✅ MoM.AI Backend is Live & Connected to MongoDB!");
+});
 export default app;
 
 // ✅ Local run (for development)
